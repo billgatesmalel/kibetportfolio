@@ -220,7 +220,9 @@ export default function Portfolio() {
             <FadeIn delay={0.1}>
               <div style={styles.aboutCard}>
                 <div style={styles.avatarRing}>
-                  <div style={styles.avatar}>IK</div>
+                  <div style={styles.avatar}>
+                    <img src="/profile.jpg" alt="Ian Kibet" style={styles.avatarImg} />
+                  </div>
                 </div>
                 <div style={styles.aboutCardInfo}>
                   <h2 style={styles.aboutName}>Ian Kibet</h2>
@@ -792,6 +794,13 @@ const styles = {
     fontSize: "1.5rem",
     fontWeight: 700,
     color: C.gold,
+    overflow: "hidden",
+  },
+  avatarImg: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    borderRadius: "50%",
   },
   aboutCardInfo: { display: "flex", flexDirection: "column", gap: "0.25rem" },
   aboutName: {
