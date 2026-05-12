@@ -222,7 +222,7 @@ export default function Portfolio() {
           <FadeIn>
             <div style={styles.sectionLabel}><span style={styles.labelLine} />About</div>
           </FadeIn>
-          <div style={styles.aboutGrid}>
+          <div style={styles.aboutGrid} className="about-grid">
             <FadeIn delay={0.1}>
               <div style={styles.aboutCard}>
                 <div style={styles.avatarRing}>
@@ -377,7 +377,7 @@ export default function Portfolio() {
               Open to senior & staff engineering roles, technical consulting, and interesting open source collaboration. Response within 24 hours.
             </p>
           </FadeIn>
-          <div style={styles.contactGrid}>
+          <div style={styles.contactGrid} className="contact-grid">
             <FadeIn delay={0.1}>
               <div style={styles.contactInfo}>
                 {[
@@ -1248,8 +1248,8 @@ const CSS = `
   .submit-btn:hover { background: #1E3450 !important; }
 
   @media (max-width: 900px) {
-    .aboutGrid { grid-template-columns: 1fr !important; }
-    .contactGrid { grid-template-columns: 1fr !important; }
+    .about-grid { grid-template-columns: 1fr !important; }
+    .contact-grid { grid-template-columns: 1fr !important; }
     .navLinks { display: none !important; }
     .burger { display: flex !important; }
   }
