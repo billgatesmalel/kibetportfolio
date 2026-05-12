@@ -197,12 +197,18 @@ export default function Portfolio() {
           </div>
         </div>
         <div style={styles.heroStats} className="slide-up delay-4">
-          {[["2+", "Years"], ["KibeProxy", "Hub"], ["Aerowin", "Aviator"], ["GitHub", "active"]].map(([n, l]) => (
-            <div key={l} style={styles.heroStat}>
-              <span style={styles.heroStatNum}>{n}</span>
-              <span style={styles.heroStatLabel}>{l}</span>
-            </div>
-          ))}
+          <div style={styles.heroStat}>
+            <div style={styles.heroStatNum}>2+</div>
+            <div style={styles.heroStatLabel}>YEARS EXP.</div>
+          </div>
+          <div style={styles.heroStat}>
+            <div style={styles.heroStatNum}>20+</div>
+            <div style={styles.heroStatLabel}>PROJECTS</div>
+          </div>
+          <div style={styles.heroStat}>
+            <div style={styles.heroStatNum}>100%</div>
+            <div style={styles.heroStatLabel}>COMMITMENT</div>
+          </div>
         </div>
         <div style={styles.scrollIndicator}>
           <div style={styles.scrollLine} />
