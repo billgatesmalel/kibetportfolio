@@ -56,7 +56,8 @@ export default function Portfolio() {
   const [experience, setExperience] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const API_BASE_URL = "http://localhost:5000/api";
+  const API_BASE_URL = "/api";
+
 
   useEffect(() => {
     const fetchData = async () => {
