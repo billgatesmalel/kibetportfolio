@@ -367,7 +367,7 @@ export default function Portfolio() {
             <FadeIn delay={0.1}>
               <div style={styles.contactInfo}>
                 {[
-                  { label: "Email", value: "kibetian2005@outlook.com" },
+                  { label: "Email", value: "kibetian2030@gmail.com" },
                   { label: "Location", value: "Bomet, Kenya" },
                   { label: "Phone", value: "+254 799 289 214" },
                 ].map(({ label, value }) => (

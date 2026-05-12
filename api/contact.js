@@ -21,7 +21,7 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: email,
-    to: process.env.EMAIL_TO || 'kibetian2005@outlook.com',
+    to: process.env.EMAIL_TO || 'kibetian2030@gmail.com',
     subject: `New Portfolio Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
