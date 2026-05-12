@@ -225,7 +225,12 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <div style={styles.aboutCardInfo}>
-                  <h2 style={styles.aboutName}>Ian Kibet</h2>
+                  <h2 style={styles.aboutName}>
+                    Ian Kibet
+                    <svg style={styles.verifiedBadge} viewBox="0 0 24 24" aria-label="Verified account">
+                      <path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.97-.81-4.08s-2.47-1.63-4.08-1.22c-.63-1.43-1.87-2.43-3.33-2.43s-2.7 1-3.33 2.43c-1.61-.41-3.14.28-4.08 1.22s-1.27 2.69-.81 4.08c-1.31.67-2.19 1.91-2.19 3.34s.88 2.67 2.19 3.34c-.46 1.39-.2 2.97.81 4.08s2.47 1.63 4.08 1.22c.63 1.43 1.87 2.43 3.33 2.43s2.7-1 3.33-2.43c1.61.41 3.14-.28 4.08-1.22s1.27-2.69.81-4.08c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2l-3.53-3.53 1.41-1.41 2.12 2.12 4.95-4.95 1.41 1.41-6.36 6.36z" />
+                    </svg>
+                  </h2>
                   <p style={styles.aboutTitle}>Mathematics & Computer Science Tutor</p>
                   <p style={styles.aboutLocation}>📍 Bomet, Kenya</p>
                   <div style={styles.aboutSocials}>
@@ -808,7 +813,16 @@ const styles = {
     fontSize: "1.25rem",
     fontWeight: 700,
     color: C.white,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "0.4rem",
     margin: 0,
+  },
+  verifiedBadge: {
+    width: 18,
+    height: 18,
+    fill: "#1D9BF0",
   },
   aboutTitle: { fontSize: "0.85rem", color: C.blue, fontWeight: 500, margin: 0 },
   aboutLocation: { fontSize: "0.8rem", color: "rgba(232,228,220,0.4)", margin: "0.25rem 0 0" },
