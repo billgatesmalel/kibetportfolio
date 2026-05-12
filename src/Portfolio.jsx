@@ -246,7 +246,7 @@ export default function Portfolio() {
               <div style={styles.aboutText}>
                 <h3 style={styles.aboutHeading}>Building systems that scale.</h3>
                 <p style={styles.aboutParagraph}>
-                  I'm a dedicated web developer based in Bomet, Kenya, with a passion for building functional and aesthetically pleasing digital experiences. Born on 27th May 2005 in Kapset village, Kimulot ward, I've developed a deep interest in technology and its potential to solve local and global problems.
+                  I'm a dedicated web developer based in Bomet, Kenya, with a passion for building functional and aesthetically pleasing digital experiences. I have a deep interest in technology and its potential to solve complex problems through code and mathematics.
                 </p>
                 <p style={styles.aboutParagraph}>
                   I specialize in creating robust web applications, having built platforms like Kibeproxy Hub and Aerowin Aviator. Beyond development, I'm committed to sharing knowledge, having taught computer science at Ngererit Comprehensive School and Njuri High School.
@@ -405,7 +405,6 @@ export default function Portfolio() {
                   <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>LinkedIn</a>
                   <a href="https://t.me/kibeproxy" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Telegram</a>
                   <a href="https://x.com/riggychii" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Twitter</a>
-                  <a href="https://www.instagram.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Instagram</a>
                 </div>
               </div>
             </FadeIn>
