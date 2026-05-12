@@ -236,6 +236,7 @@ export default function Portfolio() {
                   <div style={styles.aboutSocials}>
                     <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.socialBtn}>GitHub</a>
                     <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.socialBtn}>LinkedIn</a>
+                    <a href="https://t.me/kibeproxy" target="_blank" rel="noreferrer" style={styles.socialBtn}>Telegram</a>
                     <a href="https://x.com/riggychii" target="_blank" rel="noreferrer" style={styles.socialBtn}>Twitter</a>
                   </div>
                 </div>
@@ -383,9 +384,26 @@ export default function Portfolio() {
                     <span style={styles.contactInfoValue}>{value}</span>
                   </div>
                 ))}
+                <div style={styles.quickContactGrid}>
+                  {[
+                    { label: "WhatsApp", sub: "Message me", link: "https://wa.me/254799289214", color: "#25D366" },
+                    { label: "Telegram", sub: "@kibeproxy", link: "https://t.me/kibeproxy", color: "#0088cc" },
+                    { label: "Call Me", sub: "+254 799...", link: "tel:+254799289214", color: C.gold },
+                    { label: "SMS", sub: "Text message", link: "sms:+254799289214", color: C.blue },
+                  ].map((c) => (
+                    <a key={c.label} href={c.link} target="_blank" rel="noreferrer" style={styles.quickContactCard} className="quick-btn">
+                      <div style={{ ...styles.quickContactDot, background: c.color }} />
+                      <div>
+                        <div style={styles.quickContactLabel}>{c.label}</div>
+                        <div style={styles.quickContactSub}>{c.sub}</div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
                 <div style={styles.contactSocials}>
                   <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>GitHub</a>
                   <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>LinkedIn</a>
+                  <a href="https://t.me/kibeproxy" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Telegram</a>
                   <a href="https://x.com/riggychii" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Twitter</a>
                   <a href="https://www.instagram.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Instagram</a>
                 </div>
@@ -826,6 +844,51 @@ const styles = {
   },
   aboutTitle: { fontSize: "0.85rem", color: C.blue, fontWeight: 500, margin: 0 },
   aboutLocation: { fontSize: "0.8rem", color: "rgba(232,228,220,0.4)", margin: "0.25rem 0 0" },
+  contactSocials: { display: "flex", gap: "0.5rem", marginTop: "1.5rem", flexWrap: "wrap" },
+  contactSocialBtn: {
+    padding: "0.4rem 0.8rem",
+    borderRadius: 4,
+    border: `1px solid ${C.border}`,
+    color: C.textMuted,
+    fontSize: "0.75rem",
+    fontWeight: 600,
+    textDecoration: "none",
+    transition: "all 0.2s",
+  },
+  quickContactGrid: {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "0.75rem",
+    marginTop: "1.5rem",
+    marginBottom: "1.5rem",
+  },
+  quickContactCard: {
+    background: "rgba(255,255,255,0.03)",
+    border: `1px solid rgba(255,255,255,0.08)`,
+    borderRadius: 8,
+    padding: "0.875rem",
+    display: "flex",
+    alignItems: "center",
+    gap: "0.75rem",
+    textDecoration: "none",
+    transition: "transform 0.2s, background 0.2s",
+  },
+  quickContactDot: {
+    width: 8,
+    height: 8,
+    borderRadius: "50%",
+  },
+  quickContactLabel: {
+    fontSize: "0.85rem",
+    fontWeight: 700,
+    color: C.white,
+    lineHeight: 1.2,
+  },
+  quickContactSub: {
+    fontSize: "0.7rem",
+    color: "rgba(232,228,220,0.4)",
+    marginTop: "0.1rem",
+  },
   aboutSocials: { display: "flex", gap: "0.5rem", marginTop: "0.75rem", justifyContent: "center" },
   socialBtn: {
     color: "rgba(232,228,220,0.55)",
@@ -1045,18 +1108,7 @@ const styles = {
     color: C.textLight,
   },
   contactInfoValue: { fontSize: "0.95rem", color: C.text, fontWeight: 500 },
-  contactSocials: { display: "flex", flexWrap: "wrap", gap: "0.5rem" },
-  contactSocialBtn: {
-    color: C.text,
-    fontSize: "0.8rem",
-    fontWeight: 600,
-    padding: "0.4rem 1rem",
-    border: `1px solid ${C.border}`,
-    borderRadius: 4,
-    textDecoration: "none",
-    letterSpacing: "0.04em",
-    transition: "border-color 0.2s, color 0.2s",
-  },
+
   contactForm: {
     background: C.cream,
     borderRadius: 12,
