@@ -392,10 +392,10 @@ export default function Portfolio() {
                 ))}
                 <div style={styles.quickContactGrid}>
                   {[
-                    { label: "WhatsApp", sub: "Message me", link: "https://wa.me/254799289214", color: "#25D366" },
+                    { label: "WhatsApp", sub: "Instant Chat", link: "https://wa.me/254799289214", color: "#25D366" },
                     { label: "Telegram", sub: "@kibeproxy", link: "https://t.me/kibeproxy", color: "#0088cc" },
-                    { label: "Call Me", sub: "+254 799...", link: "tel:+254799289214", color: C.gold },
-                    { label: "SMS", sub: "Text message", link: "sms:+254799289214", color: C.blue },
+                    { label: "Call Me", sub: "Voice Call", link: "tel:+254799289214", color: C.gold },
+                    { label: "SMS", sub: "Quick Text", link: "sms:+254799289214", color: C.blue },
                   ].map((c) => (
                     <a key={c.label} href={c.link} target="_blank" rel="noreferrer" style={styles.quickContactCard} className="quick-btn">
                       <div style={{ ...styles.quickContactDot, background: c.color }} />
