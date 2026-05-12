@@ -32,13 +32,13 @@ export default async function handler(req, res) {
     ],
     experience: [
       {
-        role: "Computer Teacher",
+        role: "Mathematics & Computer Science Tutor",
         company: "Njuri High School",
         period: "April 2025 – August 2025",
         description: "Educated students on computer science fundamentals, including hardware, software systems, and introductory web development.",
       },
       {
-        role: "Computer Teacher",
+        role: "Mathematics & Computer Science Tutor",
         company: "Ngererit Comprehensive School",
         period: "April 2024 – August 2024",
         description: "Facilitated computer literacy programs and managed the school's IT infrastructure while mentoring students in digital skills.",

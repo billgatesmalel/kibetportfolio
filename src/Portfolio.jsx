@@ -178,7 +178,7 @@ export default function Portfolio() {
         </div>
         <div style={styles.heroContent}>
           <p style={styles.heroEyebrow} className="slide-up">
-            <span style={styles.eyebrowDot} /> Web Developer · Computer Science Teacher
+            <span style={styles.eyebrowDot} /> Web Developer · Mathematics & Computer Science Tutor
           </p>
           <h1 style={styles.heroName} className="slide-up delay-1">
             Ian<br />
@@ -224,7 +224,7 @@ export default function Portfolio() {
                 </div>
                 <div style={styles.aboutCardInfo}>
                   <h2 style={styles.aboutName}>Ian Kibet</h2>
-                  <p style={styles.aboutTitle}>Web Developer</p>
+                  <p style={styles.aboutTitle}>Mathematics & Computer Science Tutor</p>
                   <p style={styles.aboutLocation}>📍 Bomet, Kenya</p>
                   <div style={styles.aboutSocials}>
                     <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.socialBtn}>GitHub</a>
