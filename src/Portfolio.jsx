@@ -185,7 +185,7 @@ export default function Portfolio() {
             <span style={styles.heroNameAccent}>Kibet</span>
           </h1>
           <p style={styles.heroTagline} className="slide-up delay-2">
-            I architect digital solutions like Kibeproxy Hub<br className="hide-sm" /> and deliver high-performance web experiences.
+            Engineering robust digital solutions with mathematical precision.<br className="hide-sm" /> Building platforms like Kibeproxy Hub and Aerowin Aviator.
           </p>
           <div style={styles.heroActions} className="slide-up delay-3">
             <button style={styles.heroPrimary} onClick={() => scrollTo("Projects")}>
@@ -437,7 +437,7 @@ export default function Portfolio() {
       <footer style={styles.footer}>
         <div style={styles.footerInner}>
           <span style={styles.footerLogo}><span style={styles.logoAccent}>I</span>K</span>
-          <p style={styles.footerText}>© 2024 Ian Kibet · Built with React</p>
+          <p style={styles.footerText}>© 2026 Ian Kibet · Built with React</p>
           <p style={styles.footerText}>Bomet, Kenya</p>
         </div>
       </footer>
