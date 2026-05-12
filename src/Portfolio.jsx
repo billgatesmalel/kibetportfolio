@@ -131,7 +131,7 @@ export default function Portfolio() {
       <nav style={{ ...styles.nav, ...(scrolled ? styles.navScrolled : {}) }}>
         <div style={styles.navInner}>
           <span style={styles.logo}>
-            <span style={styles.logoAccent}>A</span>J
+            <span style={styles.logoAccent}>I</span>K
           </span>
           <div style={styles.navLinks}>
             {NAV_LINKS.map((l) => (
@@ -178,14 +178,14 @@ export default function Portfolio() {
         </div>
         <div style={styles.heroContent}>
           <p style={styles.heroEyebrow} className="slide-up">
-            <span style={styles.eyebrowDot} /> Software Engineer · 6 Years Experience
+            <span style={styles.eyebrowDot} /> Web Developer · Computer Science Teacher
           </p>
           <h1 style={styles.heroName} className="slide-up delay-1">
-            Alex<br />
-            <span style={styles.heroNameAccent}>Johnson</span>
+            Ian<br />
+            <span style={styles.heroNameAccent}>Kibet</span>
           </h1>
           <p style={styles.heroTagline} className="slide-up delay-2">
-            I build resilient, high-performance systems<br className="hide-sm" /> and ship products people depend on.
+            I architect digital solutions like Kibeproxy Hub<br className="hide-sm" /> and deliver high-performance web experiences.
           </p>
           <div style={styles.heroActions} className="slide-up delay-3">
             <button style={styles.heroPrimary} onClick={() => scrollTo("Projects")}>
@@ -197,7 +197,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div style={styles.heroStats} className="slide-up delay-4">
-          {[["6+", "Years"], ["30+", "Projects"], ["200+", "Clients"], ["2.4k", "GitHub ★"]].map(([n, l]) => (
+          {[["2+", "Years"], ["KibeProxy", "Hub"], ["Aerowin", "Aviator"], ["GitHub", "active"]].map(([n, l]) => (
             <div key={l} style={styles.heroStat}>
               <span style={styles.heroStatNum}>{n}</span>
               <span style={styles.heroStatLabel}>{l}</span>
@@ -220,16 +220,16 @@ export default function Portfolio() {
             <FadeIn delay={0.1}>
               <div style={styles.aboutCard}>
                 <div style={styles.avatarRing}>
-                  <div style={styles.avatar}>AJ</div>
+                  <div style={styles.avatar}>IK</div>
                 </div>
                 <div style={styles.aboutCardInfo}>
-                  <h2 style={styles.aboutName}>Alex Johnson</h2>
-                  <p style={styles.aboutTitle}>Senior Software Engineer</p>
-                  <p style={styles.aboutLocation}>📍 San Francisco, CA</p>
+                  <h2 style={styles.aboutName}>Ian Kibet</h2>
+                  <p style={styles.aboutTitle}>Web Developer</p>
+                  <p style={styles.aboutLocation}>📍 Bomet, Kenya</p>
                   <div style={styles.aboutSocials}>
-                    {["GitHub", "LinkedIn", "Twitter"].map((s) => (
-                      <a key={s} href="#" style={styles.socialBtn}>{s}</a>
-                    ))}
+                    <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.socialBtn}>GitHub</a>
+                    <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.socialBtn}>LinkedIn</a>
+                    <a href="https://x.com/riggychii" target="_blank" rel="noreferrer" style={styles.socialBtn}>Twitter</a>
                   </div>
                 </div>
               </div>
@@ -238,10 +238,10 @@ export default function Portfolio() {
               <div style={styles.aboutText}>
                 <h3 style={styles.aboutHeading}>Building systems that scale.</h3>
                 <p style={styles.aboutParagraph}>
-                  I'm a senior software engineer specializing in distributed systems and full-stack product development. Over 6 years, I've shipped infrastructure that handles billions of daily requests and led teams from early-stage startups to enterprise scale.
+                  I'm a dedicated web developer based in Bomet, Kenya, with a passion for building functional and aesthetically pleasing digital experiences. Born on 27th May 2005 in Kapset village, Kimulot ward, I've developed a deep interest in technology and its potential to solve local and global problems.
                 </p>
                 <p style={styles.aboutParagraph}>
-                  My work sits at the intersection of performance engineering and product thinking — I care as much about why something is built as how it's built. When I'm not architecting systems, I contribute to open source and write about software craft.
+                  I specialize in creating robust web applications, having built platforms like Kibeproxy Hub and Aerowin Aviator. Beyond development, I'm committed to sharing knowledge, having taught computer science at Ngererit Comprehensive School and Njuri High School.
                 </p>
                 <div style={styles.aboutPillsRow}>
                   {["Distributed Systems", "API Design", "Team Leadership", "OSS Contributor", "Technical Writing"].map((p) => (
@@ -367,9 +367,9 @@ export default function Portfolio() {
             <FadeIn delay={0.1}>
               <div style={styles.contactInfo}>
                 {[
-                  { label: "Email", value: "alex@alexjohnson.dev" },
-                  { label: "Location", value: "San Francisco, CA" },
-                  { label: "Availability", value: "Open to opportunities" },
+                  { label: "Email", value: "kibetian2005@outlook.com" },
+                  { label: "Location", value: "Bomet, Kenya" },
+                  { label: "Phone", value: "+254 799 289 214" },
                 ].map(({ label, value }) => (
                   <div key={label} style={styles.contactInfoRow}>
                     <span style={styles.contactInfoLabel}>{label}</span>
@@ -377,9 +377,10 @@ export default function Portfolio() {
                   </div>
                 ))}
                 <div style={styles.contactSocials}>
-                  {["GitHub", "LinkedIn", "Twitter", "Resume ↓"].map((s) => (
-                    <a key={s} href="#" style={styles.contactSocialBtn}>{s}</a>
-                  ))}
+                  <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>GitHub</a>
+                  <a href="https://github.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>LinkedIn</a>
+                  <a href="https://x.com/riggychii" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Twitter</a>
+                  <a href="https://www.instagram.com/billgatesmalel" target="_blank" rel="noreferrer" style={styles.contactSocialBtn}>Instagram</a>
                 </div>
               </div>
             </FadeIn>
@@ -435,9 +436,9 @@ export default function Portfolio() {
       {/* FOOTER */}
       <footer style={styles.footer}>
         <div style={styles.footerInner}>
-          <span style={styles.footerLogo}><span style={styles.logoAccent}>A</span>J</span>
-          <p style={styles.footerText}>© 2024 Alex Johnson · Built with React</p>
-          <p style={styles.footerText}>San Francisco, CA</p>
+          <span style={styles.footerLogo}><span style={styles.logoAccent}>I</span>K</span>
+          <p style={styles.footerText}>© 2024 Ian Kibet · Built with React</p>
+          <p style={styles.footerText}>Bomet, Kenya</p>
         </div>
       </footer>
     </div>
