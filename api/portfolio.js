@@ -1,4 +1,8 @@
-export default function handler(req, res) {
+export default async function handler(req, res) {
+  if (req.method !== 'GET') {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
+
   const PORTFOLIO_DATA = {
     skills: [
       { category: "Languages", items: ["TypeScript", "Python", "Go", "SQL", "Rust"] },

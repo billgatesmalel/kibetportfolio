@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -108,8 +109,21 @@ app.post('/api/contact', async (req, res) => {
     await transporter.sendMail(mailOptions);
     res.status(200).json({ message: "Message sent successfully" });
   } catch (error) {
-    console.error("Error sending email:", error);
     res.status(500).json({ error: "Failed to send message" });
+  }
+});
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  const indexPath = path.join(__dirname, 'dist', 'index.html');
+  if (require('fs').existsSync(indexPath)) {
+    res.sendFile(indexPath);
+  } else {
+    res.send("Backend is running. Please run 'npm run build' to generate the frontend 'dist' folder.");
   }
 });
 

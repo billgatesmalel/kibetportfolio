@@ -334,7 +334,7 @@ export default function Portfolio() {
                 <div style={styles.timelineItem}>
                   <div style={styles.timelineDotCol}>
                     <div style={styles.timelineDot} />
-                    {i < EXPERIENCE.length - 1 && <div style={styles.timelineConnector} />}
+                    {i < experience.length - 1 && <div style={styles.timelineConnector} />}
                   </div>
                   <div style={styles.timelineContent}>
                     <div style={styles.timelineHeader}>
